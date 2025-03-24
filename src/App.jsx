@@ -8,9 +8,11 @@ import SectionTitle from "./similar/SectionTitle";
 function App() {
   return (
     <>
-      <Header />
-      <Home />
-      <Footer />
+      <main className="bg-primary">
+        <Header />
+        <Home />
+        <Footer />
+      </main>
     </>
   );
 }
