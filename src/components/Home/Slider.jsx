@@ -41,18 +41,22 @@ const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const currentSlider = sliderItem[currentIndex];
 
+  // Handle Prev Arrow Btn
   const handlePrev = () => {
     if (currentIndex > 0) setCurrentIndex(currentIndex - 1);
   };
 
+  // Handle Next Arrow Btn
   const handleNext = () => {
     if (currentIndex < sliderItem.length - 1) setCurrentIndex(currentIndex + 1);
   };
 
+  // Handle Dot Arrow Btn
   const handelDotClick = (el) => {
     setCurrentIndex(el);
   };
 
+  // Handle Mobile Swiper And Desktop Swiper
   const handlers = useSwipeable({
     onSwipedLeft: handleNext,
     onSwipedRight: handlePrev,
