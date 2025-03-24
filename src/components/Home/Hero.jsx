@@ -6,7 +6,7 @@ import { LuSquareArrowUpRight } from "react-icons/lu";
 const Hero = () => {
   return (
     <>
-      <section className="bg-[url(mobileBg.png)] md:bg-[url(Hero.png)] bg-cover bg-center bg-no-repeat py-16 lg:py-28 px-5 lg:px-10">
+      <section className="bg-[url('/mobileBg.png')] md:bg-[url('/Hero.png')] bg-cover bg-center bg-no-repeat py-16 lg:py-28 px-5 lg:px-10">
         <div className="container mx-auto">
           <div className="space-y-4 text-center md:text-left">
             <h3 className="text-base lg:text-2xl text-secondary font-montserrat tracking-[5%]">
